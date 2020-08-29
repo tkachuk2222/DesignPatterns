@@ -1,2 +1,2 @@
 # DesignPatterns
-Different design patterns 
+Different design patterns realized on C# .NET Core
