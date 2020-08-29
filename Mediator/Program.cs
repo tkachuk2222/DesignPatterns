@@ -11,12 +11,9 @@ namespace Mediator
         static void Main(string[] args)
         {
             var concreteMediator = new ConcreteMediator();
-            
-            var c1 = new Colleague1();
-            var c2 = new Colleague2();
 
-            concreteMediator.Register(c1);
-            concreteMediator.Register(c2);
+            var c1 = concreteMediator.CreateColleague<Colleague1>();
+            var c2 = concreteMediator.CreateColleague<Colleague2>();
 
             c1.Send("Hello world! (from c1)");
             c2.Send("Hi, there! (from c2)");
